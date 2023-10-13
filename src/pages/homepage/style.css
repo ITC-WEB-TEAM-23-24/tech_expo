@@ -1,0 +1,43 @@
+.home{
+    height: 100vh;
+    margin: 0 0 200vh 0;
+    animation: img_anime 3s forwards;
+    position: relative;
+}
+.home h1{
+    position: absolute;
+    top: 5vh;
+    left: 10%;
+    color: violet;
+    z-index: 10;
+    font-size: 7rem;
+    font-weight: 200;
+    word-spacing: -.5rem;
+    letter-spacing: -0rem;
+    line-height: 5.5rem;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: transform .1s ease-out;
+}
+
+.home h1 span{
+    color: rgb(230, 83, 230);
+    font-weight: 400;
+}
+
+.home img{  
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    transition: transform .1s ease-out; 
+}
+
+@keyframes img_anime {
+    0%{
+        left: -5%;
+    }
+    100%{
+        left: 0;
+    }
+}
