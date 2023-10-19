@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './style.css'
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(true);
+  const [showNavbar, setShowNavbar] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
   useEffect(() => {
@@ -23,15 +23,22 @@ const Navbar = () => {
     };
   }, [prevScrollPos, showNavbar]);
 
+  useEffect(() => {
+    if (window.scrollY === 0) {
+      const timeoutId = setTimeout(() => {setShowNavbar(true);}, 1500);
+      return () => {clearTimeout(timeoutId)};
+    } 
+  }, []);
+
   return (
     <div className={`navbar ${showNavbar ? 'nav-show' : 'nav-hide'}`}>
       <ul>
-        <li>D</li>
-        <li>E</li>
-        <li>E</li>
-        <li>P</li>
-        <li>A</li>
-        <li>K</li>
+        <li><a href="">D</a></li>
+        <li><a href="">E</a></li>
+        <li><a href="">E</a></li>
+        <li><a href="">P</a></li>
+        <li><a href="">A</a></li>
+        <li><a href="">K</a></li>
       </ul>
     </div>
   );

@@ -18,7 +18,7 @@
 
 @keyframes background_anime {
     0%{
-        background-position: 30% 75%;
+        background-position: 30% 75%;  
     }
     100%{
         background-image: 0;

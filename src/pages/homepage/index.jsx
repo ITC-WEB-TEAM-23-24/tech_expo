@@ -18,16 +18,15 @@ function Home() {
   return (
     <div className='home'>
         <h1  style={{
-          transform: `translateY(${scrollPosition * -.2}px)`,
+          transform: `translate(${scrollPosition * -.2}px, ${scrollPosition * -.5}px)`,
         }}>
           <span>T</span>ech & <span>R</span>nd <br /><span>E</span>xpo
         </h1>
         <img src={i1} alt='logo' 
         style={{
-          transform: `translateY(${scrollPosition * -.4}px) `,
+          transform: `translate(0, ${scrollPosition *-.5}px) `,
         }}/>
     </div>
   )
 }
-
 export default Home

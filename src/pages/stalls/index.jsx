@@ -6,18 +6,8 @@ import i2 from "../../assets/stalls/techteam2.jpeg"
 import i3 from "../../assets/stalls/techteam3.jpeg"
 
 function Stalls() {
-  const containerRef = useRef(null);
-
-  const handleScroll = (event) => {
-    const { deltaY } = event;
-    const scrollSpeed = 0.1; // Adjust this value to change scroll speed
-
-    if (containerRef.current) {
-      containerRef.current.scrollTop += deltaY * scrollSpeed;
-    }
-  };
   return (
-    <div id='stalls' onWheel={handleScroll} ref={containerRef}>
+    <div id='stalls'>
         <ul>
             <li>
               <div className='heading'><span>T</span>ech<span>T</span>eams</div> 
