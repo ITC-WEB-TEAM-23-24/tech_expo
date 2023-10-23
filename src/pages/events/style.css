@@ -1,3 +1,37 @@
+.events{
+  position: relative;
+  color: white;
+}
+
+.events ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+}
+
+.events ul li{
+  color: white;
+  padding: 3vh 10%;
+  list-style: none;
+}
+
+
+/*--------------------------------------------------------textc--------------------------*/
+.textc{
+  display: flex;
+  flex-direction: column;
+}
+
+.textc .textc_li{
+  display: flex;
+}
+
+.textc_li span{
+  margin-left: 2px;
+}
+
+
 /*---------------------------------------------------------corousel---------------------------------------*/
 .main_carousel{
     position: relative;
@@ -119,13 +153,14 @@
   }
   
   /* Add this CSS to your mainlery_base.css file */
-  .page-indicators {
+  .main_carousel .page-indicators {
     display: flex;
     justify-content: center;
-    margin-top: -28px;
+    position: relative;
+    bottom: -200px;
   }
   
-  .page-indicator {
+  .main_carousel .page-indicator {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -134,7 +169,7 @@
     cursor: pointer;
   }
   
-  .page-indicator.active {
+  .main_carousel .page-indicator.active {
     background-color: #147df6; /* Active indicator color */
   }
   
@@ -152,9 +187,6 @@
     transform: translateX(100%) scale(0);
     transition: transform 0ms ease-in-out ;
     /* left: 50%; */
-  }
-  .page-indicators {
-    margin-top: -40px;
   }
   
   .main_carousel .slides .slide.prev{
@@ -194,7 +226,7 @@
     padding-top: 21vh;
     top: 0vh;
   }
-  .slides{
+  .main_carousel .slides{
   overflow-x: hidden;
   }
   .main_carousel .button-container .button .right{

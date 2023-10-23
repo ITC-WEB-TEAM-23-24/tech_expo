@@ -11,17 +11,6 @@
     /* -webkit-font-smoothing: antialiased;
   } */
   
-  .cards_title_list {
-    /* font-family: "Raleway"; */
-    font-size: 40px;
-    font-weight: 600;
-    color: #e4baf1;
-    text-align: center;
-    margin: 0;
-    padding: 10px;
-    background-color:transparent;
-  }
-  
   p {
     line-height: 1.5em;
   }

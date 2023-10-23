@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./style.css"
+import AOS from "aos"
+import "aos/dist/aos.css"
+import i1 from "../../assets/av2.avif"
+
 
 
 class Card extends Component {
@@ -46,7 +50,7 @@ class Card extends Component {
   };
 
   render() {
-    const { dataImage } = this.props;
+    const { dataImage, aosDelay } = this.props;
     const { width, height, mouseX, mouseY } = this.state;
 
     const cardStyle = {
@@ -73,12 +77,12 @@ class Card extends Component {
         onMouseLeave={this.handleMouseLeave}
         ref={(ref) => (this.cardRef = ref)}
       >
-        <div className="card" style={cardStyle}>
+        <div className="card" style={cardStyle} data-aos="fade-left" data-aos-duration="1000" data-aos-delay={aosDelay}>
           <div
             className="card-bg"
             style={{ ...cardBgTransform, ...cardBgImage }}
           ></div>
-          <div className="card-info">{this.props.children}</div>
+          <div className="card-info" dela>{this.props.children}</div>
         </div>
       </div>
     );
@@ -86,72 +90,80 @@ class Card extends Component {
 }
 
 class Compi extends Component {
+
   render() {
     const cardData = [
       {
         // dataImage: ,
         title: "Hackathon-1",
         description: "Located in H15 C wing",
+        dataImage: "i1",
+        aosDelay: "100",
       },
       {
         // dataImage:,
         title: "Hackathon-2",
         description: "IIT Bombay SAC",
+        aosDelay: "200",
       },
       {
         // dataImage: ,
         title: "Hackathon-3",
         description: "IIT Bombay SAC",
+        aosDelay: "300",
       },
       {
         // dataImage: ,
         title: "Hackathon-4",
         description: "IIT Bombay SAC",
+        aosDelay: "400",
       },
       {
         // dataImage: ,
         title: "Competition-1",
         description: "IIT Bombay SAC",
+        aosDelay: "500",
       },
       {
         // dataImage: ,
         title: "Competition-2",
         description: "IIT Bombay SAC",
+        aosDelay: "600",
       },
       {
         // dataImage: ,
         title: "Competition-3",
         description: "IIT Bombay SAC",
+        aosDelay: "700",
       },
       {
         // dataImage: ,
         title: "Competition-4",
         description: "IIT Bombay SACx",
+        aosDelay: "800",
       },
     ];
 
+    
     return (
       <div className="App_cards">
             <h1 className="cards_title_list">Competitions and Workshops</h1>
             <div id="app" className="cards_container">
-              <AnimatePresence>
                 {cardData.map((card, index) => (
                   <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: -100 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 100 }}
-                    transition={{ duration: 0.5, delay: index * 0.2 }}
-                    // whileTap={{ scale: 4 }}
+                  key={index}
+                  initial={{ opacity: 0, y: -100 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 100 }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
                   >
-                    <Card dataImage={card.dataImage}>
+                    <Card dataImage={i1} aosDelay={card.aosDelay}>
                       <h1>{card.title} </h1>
                       <p>{card.description}</p>
                       <button>Register</button>
                     </Card>
                   </motion.div>
                 ))}
-              </AnimatePresence>
             </div>
       </div>
     );

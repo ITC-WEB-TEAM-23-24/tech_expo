@@ -1,11 +1,28 @@
 import React from 'react'
 import img1 from './1.png'
-import Carousel from './corousel'
+import Carousel from './component/corousel'
+import './style.css'
+import Text_contain from './component/text_contain'
 
-function Events() {
+function Eventss() {
   return (
-    <div>
+    <div className='events'>
         <h1>Events</h1>
+        {/* <div>
+          <ul>
+            <li>Gaming & Interactive Zone</li>
+            <li>VR Gaming</li>
+            <li>Lazer Tag</li>
+            <li>Sky Gazing</li>
+            <li>Drone Flying</li>
+            <li>Non-Newtonian Fluid?????</li>
+            <li>Car Simualtor</li>
+            <li>Plane Simulator</li>
+            <li>HP Gaming</li>
+            <li>PhotoBoot</li>
+          </ul>
+        </div> */}
+        <Text_contain/>
         <Carousel
               i1={img1}
               i2={img1}
@@ -16,4 +33,4 @@ function Events() {
     </div>
   )
 }
-export default Events
+export default Eventss  

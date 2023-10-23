@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
-import './style.css'
-import img1 from './1.png'
+import '../style.css'
+import img1 from '../1.png'
 
 const Carousel = ({ i1, i2, i3, i4, i5 }) => {
   const [current, setCurrent] = useState(2);
@@ -107,7 +107,7 @@ const Carousel = ({ i1, i2, i3, i4, i5 }) => {
                 <div className="slide prev">
                     <img src={img1} className="Glimpse"/>
                 </div>
-                <div className="slide active">
+                 <div className="slide active">
                     <img src={img1} className="Glimpse"/>
                 </div>
                 <div className="slide next">

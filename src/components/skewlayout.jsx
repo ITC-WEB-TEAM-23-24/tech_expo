@@ -37,11 +37,9 @@ export default function Skewlayout({children}) {
     };
 
     return (
-        <div ref={app}>
-            <div ref={scrollContainer}>
-                {children}
-            </div>
-        </div>
+    <div ref={scrollContainer}>
+        {children}
+    </div>
     )
 }
 

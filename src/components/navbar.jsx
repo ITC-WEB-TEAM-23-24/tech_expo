@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './style.css'
+import n1 from '../assets/navbar/home.jpg'
+import n2 from '../assets/navbar/sponsor.png'
+import n3 from '../assets/navbar/events.png'
+import n4 from '../assets/navbar/compi.png'
+import n5 from '../assets/navbar/stalls.png'
+
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -33,12 +39,11 @@ const Navbar = () => {
   return (
     <div className={`navbar ${showNavbar ? 'nav-show' : 'nav-hide'}`}>
       <ul>
-        <li><a href="">D</a></li>
-        <li><a href="">E</a></li>
-        <li><a href="">E</a></li>
-        <li><a href="">P</a></li>
-        <li><a href="">A</a></li>
-        <li><a href="">K</a></li>
+        <li><a href="" title='Home'><img src={n1} alt="" /></a></li>
+        <li><a href="" title='Sponsors'><img src={n2} alt="" /></a></li>
+        <li><a href="" title='Events'><img src={n3} alt="" /></a></li>
+        <li><a href="" title='Competitions and Workshops'><img src={n4} alt="" /></a></li>
+        <li><a href="" title='Stalls'><img src={n5} alt="" /></a></li>
       </ul>
     </div>
   );
