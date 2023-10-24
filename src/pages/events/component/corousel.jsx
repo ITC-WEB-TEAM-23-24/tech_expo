@@ -99,7 +99,8 @@ const Carousel = ({ i1, i2, i3, i4, i5 }) => {
 
     
     return (  
-        <div className="main_carousel">
+
+        <div id="events" className="main_carousel">
             <div className="slides" ref={slidesRef}>
                 <div className="slide prev2">
                     <img src={img1}  className="Glimpse"/>

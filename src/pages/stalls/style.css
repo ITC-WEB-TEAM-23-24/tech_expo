@@ -139,3 +139,55 @@
     }
 }
 
+@media (max-width: 550px) {
+    #stalls ul .img1{
+        /* display: none; */
+    }
+    #stalls ul .img1{
+        left: 0%;
+        top: 130%;
+        width: min(11rem, 50%);
+    }
+    #stalls ul .img2{
+        right: 5%;
+        top: 110%;
+        width: min(11rem, 50%);
+    }
+    #stalls ul .img3{
+        right: 5%;
+        top: -120%;
+        width: min(11rem, 50%);
+    }
+    #stalls ul .img4{
+        left: 0%;
+        top: -150%;
+        width: min(11rem, 50%);
+    }
+    
+    }
+@media (max-width: 550px) {
+    #stalls ul .img1{
+        /* display: none; */
+    }
+    #stalls ul .img1{
+        left: 0%;
+        top: 130%;
+        width: min(9rem, 50%);
+    }
+    #stalls ul .img2{
+        right: 5%;
+        top: 110%;
+        width: min(9rem, 50%);
+    }
+    #stalls ul .img3{
+        right: 5%;
+        top: -120%;
+        width: min(9rem, 50%);
+    }
+    #stalls ul .img4{
+        left: 0%;
+        top: -150%;
+        width: min(9rem, 50%);
+    }
+    
+    }

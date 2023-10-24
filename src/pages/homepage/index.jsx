@@ -2,6 +2,8 @@ import React from 'react'
 import './style.css'
 import i1 from '../../assets/land.png'
 import { useState, useEffect } from 'react';
+import itclogo from "./ITClogoWhite.png";
+
 
 function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -16,7 +18,11 @@ function Home() {
     };
   }, []);
   return (
-    <div className='home'>
+    <div id="home" className='home_'>
+      <div className="itclogo">
+      <img src={itclogo} alt="ITC Logo" />
+      </div>
+      <div className='home'>
         <h1  style={{
           transform: `translate(${scrollPosition * -.2}px, ${scrollPosition * -.5}px)`,
         }}>
@@ -26,6 +32,7 @@ function Home() {
         style={{
           transform: `translate(0, ${scrollPosition *-.5}px) `,
         }}/>
+    </div>
     </div>
   )
 }
