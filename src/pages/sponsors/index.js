@@ -7,7 +7,7 @@ function Sponsor() {
   return (
     <div className={style.main}>
         <div className={style.container}>
-          <div className={style.spon}>
+          <div className={style.spon} data-aos="fade-right" data-aos-duration="1000">
             <div>
               <img src={s1 }alt=""/>
             </div>
@@ -15,7 +15,7 @@ function Sponsor() {
               Powered by 
             </p>
           </div>
-          <div className={style.spon}>
+          <div className={style.spon} data-aos="fade-left" data-aos-duration="1000">
             <div>
               <img src={s2} alt=""/>
             </div>

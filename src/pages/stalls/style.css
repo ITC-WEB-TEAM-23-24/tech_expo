@@ -51,12 +51,12 @@
     position: absolute;
     left: 30%;
 }
-
+    
 #stalls ul img{
     position: fixed;
     opacity: 0;
     transition: .3s ease-in;
-    z-index: 1;
+    z-index: 5;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
 }
 

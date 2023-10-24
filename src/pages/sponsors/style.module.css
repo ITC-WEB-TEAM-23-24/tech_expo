@@ -5,6 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .spon{
@@ -18,7 +19,7 @@
 }
 
 .spon p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
     color: white;
