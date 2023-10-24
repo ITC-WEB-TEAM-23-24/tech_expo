@@ -43,7 +43,7 @@ class Card extends Component {
         mouseX: 0,
         mouseY: 0,
       });
-    }, 0);
+    }, 10);
     this.setState({
       mouseLeaveDelay: delay,
     });
@@ -139,7 +139,7 @@ class Compi extends Component {
       {
         // dataImage: ,
         title: "Competition-4",
-        description: "IIT Bombay SACx",
+        description: "IIT Bombay SAC",
         aosDelay: "800",
       },
     ];
