@@ -57,7 +57,7 @@ function Stalls() {
         <h1>STALLS</h1>
         <ul>
           {data.map((item, index) => (
-            <li data-aos={(index%2==0) ? "fade-left" : "fade-right" } data-aos-duration="1000" data-aos-delay="300" key={index}> 
+            <li data-aos={(index%2==0) ? "fade-left" : "fade-right" } key={index}> 
               <div className='heading'>{item.tittle}</div> 
               <div className='description'>{item.description}</div>
               <img src={item.img1} alt="" className='img1'/>
