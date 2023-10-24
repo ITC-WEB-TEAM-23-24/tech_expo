@@ -1,13 +1,13 @@
 import React from 'react'
 import './style.css'
-import i11 from "../../assets/stalls/techteam.jpeg"
-import i12 from "../../assets/stalls/techteam2.jpeg"
-import i13 from "../../assets/stalls/techteam3.jpeg"
-import i14 from "../../assets/stalls/techteam.jpeg"
-import i21 from "../../assets/stalls/techteam.jpeg"
-import i22 from "../../assets/stalls/techteam2.jpeg"
-import i23 from "../../assets/stalls/techteam3.jpeg"
-import i24 from "../../assets/stalls/techteam.jpeg"
+import i11 from "./img/tt1.png"
+import i12 from "./img/tt2.png"
+import i13 from "./img/tt3.png"
+import i14 from "./img/tt4.png"
+import i21 from "./img/tc1.jpg"
+import i22 from "./img/tc2.jpeg"
+import i23 from "./img/tc3.png"
+import i24 from "./img/tc4.jpeg"
 import i31 from "../../assets/stalls/techteam.jpeg"
 import i32 from "../../assets/stalls/techteam2.jpeg"
 import i33 from "../../assets/stalls/techteam3.jpeg"
@@ -63,7 +63,7 @@ function Stalls() {
               <img src={item.img1} alt="" className='img1'/>
               <img src={item.img2} alt="" className='img2'/>
               <img src={item.img3} alt="" className='img3'/>
-              <img src={item.img3} alt="" className='img4'/>
+              <img src={item.img4} alt="" className='img4'/>
             </li>
           ))}
         

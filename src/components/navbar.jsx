@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
-import n1 from "../assets/navbar/home.jpg";
+import n1 from "../assets/navbar/home.png";
 import n2 from "../assets/navbar/sponsor.png";
 import n3 from "../assets/navbar/events.png";
 import n4 from "../assets/navbar/compi.png";
