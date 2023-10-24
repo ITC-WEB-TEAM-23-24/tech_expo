@@ -20,7 +20,7 @@ function Home() {
         <h1  style={{
           transform: `translate(${scrollPosition * -.2}px, ${scrollPosition * -.5}px)`,
         }}>
-          <span>T</span>ech & <span>R</span>nd <br /><span>E</span>xpo
+          <span>T</span>ech <span>R</span>nd <br /><span>E</span>xpo
         </h1>
         <img src={i1} alt='logo' 
         style={{
