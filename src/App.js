@@ -11,6 +11,7 @@ import "aos/dist/aos.css"
 import Skewlayout from './components/skewlayout';
 import Eventss from './pages/events';
 import Sponsor from './pages/sponsors';
+import About from './pages/about';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,20 +27,21 @@ function App() {
 
   return (
     <div className="App">
-     {/* {isLoading ? (
+     {isLoading ? (
         <Preloader/>
-      ) : (  */}
+      ) : ( 
         <>
           <Navbar />
           <Home />
           <div className="background" />
           {/* <Sponsor/> */}
+          <About/>
           <Stalls />
           <Compi/>
           <Eventss/>
           <Footer/>
         </>
-       {/* )}  */}
+        )}  
     </div>
   );
 }
