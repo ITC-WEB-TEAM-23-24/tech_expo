@@ -33,7 +33,7 @@ function App() {
           <Navbar />
           <Home />
           <div className="background" />
-          <Sponsor/>
+          {/* <Sponsor/> */}
           <Stalls />
           <Compi/>
           <Eventss/>
