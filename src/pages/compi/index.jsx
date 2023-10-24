@@ -147,7 +147,7 @@ class Compi extends Component {
     
     return (
       <div className="App_cards">
-            <h1 className="cards_title_list">Competitions and Workshops</h1>
+            <h1 className="cards_title_list" data-aos="fade-up" data-aos-duration="1000">Competitions and Workshops</h1>
             <div id="app" className="cards_container">
                 {cardData.map((card, index) => (
                   <motion.div

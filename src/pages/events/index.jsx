@@ -7,7 +7,7 @@ import Text_contain from './component/text_contain'
 function Eventss() {
   return (
     <div className='events'>
-        <h1>Events</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1000">Events</h1>
         {/* <div>
           <ul>
             <li>Gaming & Interactive Zone</li>

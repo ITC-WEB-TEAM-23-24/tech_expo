@@ -6,7 +6,7 @@ import '../style.css'
 
 function Text_contain() {
     const item1 = [
-        "Gaming & Interactive Zone",
+        "Gaming Zone",
         "VR Gaming",
         "Lazer Tag",
         "Everything"

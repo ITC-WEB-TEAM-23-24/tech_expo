@@ -54,7 +54,7 @@ function Stalls() {
   ]
   return (
       <div id='stalls'>
-        <h1>STALLS</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1000">STALLS</h1>
         <ul>
           {data.map((item, index) => (
             <li data-aos={(index%2==0) ? "fade-left" : "fade-right" } data-aos-duration="1000" data-aos-delay="300" key={index}> 
