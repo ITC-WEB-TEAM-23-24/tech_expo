@@ -3,7 +3,7 @@ import './App.css';
 import Stalls from './pages/stalls';
 import Navbar from './components/navbar';
 import Home from './pages/homepage';
-import Footer from './components/footer';
+// import Footer from './components/footer';
 import Compi from './pages/compi';
 import Preloader from './pages/preloader';
 import AOS from "aos"
@@ -30,6 +30,7 @@ function App() {
      {isLoading ? (
         <Preloader/>
       ) : ( 
+      ) : ( 
         <>
           <Navbar />
           <Home />
@@ -39,7 +40,7 @@ function App() {
           <Stalls />
           <Compi/>
           <Eventss/>
-          <Footer/>
+          {/* <Footer/> */}
         </>
         )}  
     </div>
