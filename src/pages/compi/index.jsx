@@ -43,7 +43,7 @@ class Card extends Component {
         mouseX: 0,
         mouseY: 0,
       });
-    }, 1000);
+    }, 10);
     this.setState({
       mouseLeaveDelay: delay,
     });
@@ -54,14 +54,14 @@ class Card extends Component {
     const { width, height, mouseX, mouseY } = this.state;
 
     const cardStyle = {
-      transform: `rotateY(${(mouseX / width) * 30}deg) rotateX(${
-        (mouseY / height) * -20
+      transform: `rotateY(${(mouseX / width) * 50}deg) rotateX(${
+        (mouseY / height) * -40
       }deg)`,
     };
 
     const cardBgTransform = {
-      transform: `translateX(${(mouseX / width) * -40}px) translateY(${
-        (mouseY / height) * -40
+      transform: `translateX(${(mouseX / width) * -70}px) translateY(${
+        (mouseY / height) * -70
       }px)`,
     };
 
@@ -71,6 +71,7 @@ class Card extends Component {
 
     return (
       <div
+      id="compi"
         className="card-wrap"
         onMouseMove={this.handleMouseMove}
         onMouseEnter={this.handleMouseEnter}
@@ -93,31 +94,31 @@ class Compi extends Component {
 
   render() {
     const cardData = [
-      {
-        // dataImage: ,
-        title: "Hackathon-1",
-        description: "Located in H15 C wing",
-        dataImage: "i1",
-        aosDelay: "100",
-      },
-      {
-        // dataImage:,
-        title: "Hackathon-2",
-        description: "IIT Bombay SAC",
-        aosDelay: "200",
-      },
-      {
-        // dataImage: ,
-        title: "Hackathon-3",
-        description: "IIT Bombay SAC",
-        aosDelay: "300",
-      },
-      {
-        // dataImage: ,
-        title: "Hackathon-4",
-        description: "IIT Bombay SAC",
-        aosDelay: "400",
-      },
+      // {
+      //   // dataImage: ,
+      //   title: "Hackathon-1",
+      //   description: "Located in H15 C wing",
+      //   dataImage: "i1",
+      //   aosDelay: "100",
+      // },
+      // {
+      //   // dataImage:,
+      //   title: "Hackathon-2",
+      //   description: "IIT Bombay SAC",
+      //   aosDelay: "200",
+      // },
+      // {
+      //   // dataImage: ,
+      //   title: "Hackathon-3",
+      //   description: "IIT Bombay SAC",
+      //   aosDelay: "300",
+      // },
+      // {
+      //   // dataImage: ,
+      //   title: "Hackathon-4",
+      //   description: "IIT Bombay SAC",
+      //   aosDelay: "400",
+      // },
       {
         // dataImage: ,
         title: "Competition-1",
@@ -139,7 +140,7 @@ class Compi extends Component {
       {
         // dataImage: ,
         title: "Competition-4",
-        description: "IIT Bombay SACx",
+        description: "IIT Bombay SAC",
         aosDelay: "800",
       },
     ];
@@ -147,7 +148,7 @@ class Compi extends Component {
     
     return (
       <div className="App_cards">
-            <h1 className="cards_title_list" data-aos="fade-up" data-aos-duration="1000">Competitions and Workshops</h1>
+            <h1 className="cards_title_list">Competitions</h1>
             <div id="app" className="cards_container">
                 {cardData.map((card, index) => (
                   <motion.div

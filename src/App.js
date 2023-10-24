@@ -19,16 +19,16 @@ function App() {
     AOS.init();
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3200);
+    }, 3700);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="App">
-      {/* {isLoading ? (
+     {/* {isLoading ? (
         <Preloader/>
-      ) : ( */}
+      ) : (  */}
         <>
           <Navbar />
           <Home />
@@ -37,8 +37,9 @@ function App() {
           <Stalls />
           <Compi/>
           <Eventss/>
+          <Footer/>
         </>
-      {/* )} */}
+       {/* )}  */}
     </div>
   );
 }

@@ -42,7 +42,7 @@
 
 #stalls ul li .description{
     color: white;
-    font-size: .7rem;
+    font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     opacity: 0;
     transition: .3s ease-out;
@@ -80,27 +80,31 @@
 #stalls ul li:hover img{
     opacity: .9;
     transition: .3s ease-out;
-    z-index: 1;
+    /* z-index: 5; */
 }
 
 #stalls ul .img1{
     left: 50%;
     top: 130%;
     width: min(16rem, 50%);
+    z-index: 500;
 }
 #stalls ul .img2{
     right: 5%;
     top: 110%;
     width: min(13rem, 50%);
+    z-index: 500;
 }
 #stalls ul .img3{
     right: 5%;
-    top: -180%;
+    top: -160%;
     width: min(10rem, 50%);
+    z-index: 500;
 }
 #stalls ul .img4{
     left: 50%;
-    top: -200%;
+    top: -160%;
+    z-index: 500;
     width: min(14rem, 50%);
 }
 
@@ -110,7 +114,7 @@
         font-size: 1.1rem;
     }
     #stalls ul li .description{
-        font-size: .6rem;
+        font-size: 0.6rem;
         left: 35%;
     }
     #stalls ul .img1{
@@ -135,3 +139,55 @@
     }
 }
 
+@media (max-width: 550px) {
+    #stalls ul .img1{
+        /* display: none; */
+    }
+    #stalls ul .img1{
+        left: 0%;
+        top: 130%;
+        width: min(11rem, 50%);
+    }
+    #stalls ul .img2{
+        right: 5%;
+        top: 110%;
+        width: min(11rem, 50%);
+    }
+    #stalls ul .img3{
+        right: 5%;
+        top: -120%;
+        width: min(11rem, 50%);
+    }
+    #stalls ul .img4{
+        left: 0%;
+        top: -150%;
+        width: min(11rem, 50%);
+    }
+    
+    }
+@media (max-width: 550px) {
+    #stalls ul .img1{
+        /* display: none; */
+    }
+    #stalls ul .img1{
+        left: 0%;
+        top: 130%;
+        width: min(9rem, 50%);
+    }
+    #stalls ul .img2{
+        right: 5%;
+        top: 110%;
+        width: min(9rem, 50%);
+    }
+    #stalls ul .img3{
+        right: 5%;
+        top: -120%;
+        width: min(9rem, 50%);
+    }
+    #stalls ul .img4{
+        left: 0%;
+        top: -150%;
+        width: min(9rem, 50%);
+    }
+    
+    }
