@@ -10,6 +10,7 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import Skewlayout from './components/skewlayout';
 import Eventss from './pages/events';
+import Sponsor from './pages/sponsors';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,6 +33,7 @@ function App() {
           <Navbar />
           <Home />
           <div className="background" />
+          <Sponsor/>
           <Stalls />
           <Compi/>
           <Eventss/>
