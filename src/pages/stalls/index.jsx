@@ -42,15 +42,15 @@ import Skewlayout from '../../components/skewlayout'
 
 function Stalls() {
   const data  = [
-    {tittle: 'Tech Teams', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', img1: i11, img2: i12, img3: i13, img4: i14},
-    {tittle: 'Tech Communities', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', img1: i21, img2: i22, img3: i23, img4: i24},
-    {tittle: 'Tech Clubs', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', img1: i31, img2: i32, img3: i33, img4: i34},
-    {tittle: 'ITSP Projects', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', img1: i41, img2: i42, img3: i43, img4: i44},
-    {tittle: 'Centre of Excellence Projects', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', img1: i51, img2: i52, img3: i53, img4: i54},
-    {tittle: 'Insti Startup', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', img1: i61, img2: i62, img3: i63, img4: i64},
-    {tittle: 'Department & Prof Projects', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', img1: i71, img2: i72, img3: i73, img4: i74},
-    {tittle: 'Food', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', img1: i81, img2: i82, img3: i83, img4: i84},
-    {tittle: 'Sponsors & Companies', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', img1: i91, img2: i92, img3: i93, img4: i94}
+    {tittle: 'Tech Teams', description: 'Tech Teams are groups of skilled individuals who work on specialized projects or competitions. These teams bring together talents from diverse backgrounds to tackle complex technical challenges. ', img1: i11, img2: i12, img3: i13, img4: i14},
+    {tittle: 'Tech Communities', description: 'Technical Communities bring together individuals with shared technical interests or professional goals. These communities provide a supportive environment for networking, knowledge sharing, and collaboration. ', img1: i21, img2: i22, img3: i23, img4: i24},
+    {tittle: 'Tech Clubs', description: 'ITC Clubs are student-led organizations that focus on specific technical domains or interdisciplinary areas. These clubs serve as a platform for students to explore their interests, gain practical skills, and collaborate on projects. ', img1: i31, img2: i32, img3: i33, img4: i34},
+    {tittle: 'ITSP Projects', description: 'In ITSP Projects, students are involved in diverse technical projects, which encourage innovation, hands-on learning, and interdisciplinary collaboration. They often tackle real-world issues, fostering creativity and problem-solving skills.  ', img1: i41, img2: i42, img3: i43, img4: i44},
+    {tittle: 'Centre of Excellence Projects', description: 'Centers of Excellence are dynamic research entities, collaborating on industrial projects. Their primary objective is to incubate and support startups within their specialized domains, facilitating the transformation of innovative ideas into businesses.', img1: i51, img2: i52, img3: i53, img4: i54},
+    // {tittle: 'Insti Startup', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', img1: i61, img2: i62, img3: i63, img4: i64},
+    {tittle: 'Department Projects', description: 'Department projects are initiatives undertaken by specific departments, aimed to achieve defined objectives and contribute to the overall progress of the department, varying from research and development to strategic initiatives. ', img1: i71, img2: i72, img3: i73, img4: i74},
+    // {tittle: 'Food', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', img1: i81, img2: i82, img3: i83, img4: i84},
+    {tittle: 'Company Stalls', description: 'Company stalls serve as platforms for businesses to showcase their latest innovations and interact with a tech-savvy audience to foster networking, brand visibility, market research and even talent recruitment. ', img1: i91, img2: i92, img3: i93, img4: i94}
   ]
   return (
       <div id='stalls'>
