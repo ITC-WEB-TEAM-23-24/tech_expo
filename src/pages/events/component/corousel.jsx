@@ -1,6 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react'
 import '../style.css'
-import img1 from '../1.png'
+import img1 from '../dronesflying.webp'
+import img2 from '../hpgaming.webp'
+import img3 from '../lasermaze.webp'
+import img4 from '../skygazing.webp'
+import img5 from '../vrgaming.webp'
 
 const Carousel = ({ i1, i2, i3, i4, i5 }) => {
   const [current, setCurrent] = useState(2);
@@ -106,16 +110,16 @@ const Carousel = ({ i1, i2, i3, i4, i5 }) => {
                     <img src={img1}  className="Glimpse"/>
                 </div>
                 <div className="slide prev">
-                    <img src={img1} className="Glimpse"/>
+                    <img src={img2} className="Glimpse"/>
                 </div>
                  <div className="slide active">
-                    <img src={img1} className="Glimpse"/>
+                    <img src={img3} className="Glimpse"/>
                 </div>
                 <div className="slide next">
-                    <img src={img1} className="Glimpse"/>
+                    <img src={img4} className="Glimpse"/>
                 </div>
                 <div className="slide next2">
-                    <img src={img1} className="Glimpse"/>
+                    <img src={img5} className="Glimpse"/>
                 </div>
             </div>
             <div className="page-indicators">

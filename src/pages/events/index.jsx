@@ -1,5 +1,9 @@
 import React from 'react'
-import img1 from './1.png'
+import img1 from './dronesflying.webp'
+import img2 from './hpgaming.webp'
+import img3 from './lasermaze.webp'
+import img4 from './skygazing.webp'
+import img5 from './vrgaming.webp'
 import Carousel from './component/corousel'
 import './style.css'
 import Text_contain from './component/text_contain'
@@ -34,10 +38,10 @@ function Eventss() {
         </div>
         <Carousel
               i1={img1}
-              i2={img1}
-              i3={img1}
-              i4={img1}
-              i5={img1}
+              i2={img2}
+              i3={img3}
+              i4={img4}
+              i5={img5}
             />
     </div>
   )

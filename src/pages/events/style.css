@@ -80,7 +80,8 @@
 .main_carousel{
     position: relative;
     height: 70vh;
-    padding-top: 32vh;
+    padding-top: 38vh;
+    /* padding-bottom: 38vh; */
     overflow-x: hidden;
     top: 0vh;
     background-position: cover;
