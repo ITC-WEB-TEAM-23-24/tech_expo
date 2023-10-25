@@ -58,7 +58,7 @@ const Footer = ({
             <h4>Venue</h4>
             <p>
               <b>IIT Bombay</b><br />
-              Shailesh J. Mehta School of Management Building <br />and LT - PC Saxena Auditorium,<br />
+              Student Activity Center <br />
               IIT Bombay, Powai, Mumbai,<br />
               Maharashtra, 40076
             </p>
