@@ -96,13 +96,13 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href="#stalls" title="Stalls" onClick={handleStallsClick}>
+          <a href="#stalls" title="Exhibitions" onClick={handleStallsClick}>
             <img src={n5} alt="" />
           </a>
         </li>
 
         <li>
-          <a href="#compi" title="Competitions and Workshops" onClick={handleCompiClick}>
+          <a href="#compi" title="Competitions" onClick={handleCompiClick}>
             <img src={n4} alt="" />
           </a>
         </li>
