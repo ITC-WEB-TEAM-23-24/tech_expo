@@ -52,7 +52,7 @@ const Navbar = () => {
     }
   };
   const handleEventsClick = () => {
-    const eventsSection = document.getElementById("events");
+    const eventsSection = document.getElementById("about");
 
     if (eventsSection) {
       eventsSection.scrollIntoView({ behavior: "smooth" });
@@ -91,7 +91,7 @@ const Navbar = () => {
         </li>
         
         <li>
-          <a href="#events" title="About Us" onClick={handleAboutUsClick}>
+          <a href="#about" title="About Us" onClick={handleAboutUsClick}>
             <img src={n2} alt="" />
           </a>
         </li>

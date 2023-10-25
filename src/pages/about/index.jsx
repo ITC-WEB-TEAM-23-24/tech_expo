@@ -1,10 +1,10 @@
 import React from "react";
-import logo from './purple+color_website.png'
+import logo from './purple_expo_logo_shadow.webp'
 import "./about.css"
 
 export default function About() {
     return (
-        <div className="about" >
+        <div id="about" className="about" >
             <div className="title" data-aos='fade-up' data-aos-duration='2000'>
                 <h1>ABOUT US</h1>
             </div>

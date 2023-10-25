@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import i1 from '../../assets/land.png'
+import i1 from '../../assets/land.webp'
 import { useState, useEffect } from 'react';
 import itclogo from "./ITClogoWhite.png";
 

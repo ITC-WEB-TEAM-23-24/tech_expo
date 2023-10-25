@@ -3,7 +3,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./style.css"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import i1 from "../../assets/av2.avif"
+import i1 from "../../assets/botsumo.webp"
+import i2 from "../../assets/robosoccer.webp"
+import i3 from "../../assets/tba.webp"
+import i4 from "../../assets/tba.webp"
 
 
 
@@ -43,7 +46,7 @@ class Card extends Component {
         mouseX: 0,
         mouseY: 0,
       });
-    }, 10);
+    }, 1000);
     this.setState({
       mouseLeaveDelay: delay,
     });
@@ -52,23 +55,22 @@ class Card extends Component {
   render() {
     const { dataImage, aosDelay } = this.props;
     const { width, height, mouseX, mouseY } = this.state;
-
     const cardStyle = {
-      transform: `rotateY(${(mouseX / width) * 50}deg) rotateX(${
-        (mouseY / height) * -40
+      transform: `rotateY(${(mouseX / width) * 30}deg) rotateX(${
+        (mouseY / height) * -30
       }deg)`,
     };
 
     const cardBgTransform = {
-      transform: `translateX(${(mouseX / width) * -70}px) translateY(${
-        (mouseY / height) * -70
+      transform: `translateX(${(mouseX / width) * -40}px) translateY(${
+        (mouseY / height) * -40
       }px)`,
     };
 
     const cardBgImage = {
       backgroundImage: `url(${dataImage})`,
     };
-
+    
     return (
       <div
       id="compi"
@@ -78,12 +80,12 @@ class Card extends Component {
         onMouseLeave={this.handleMouseLeave}
         ref={(ref) => (this.cardRef = ref)}
       >
-        <div className="card" style={cardStyle} data-aos="fade-left" data-aos-duration="1000" data-aos-delay={aosDelay}>
+        <div className="card" style={cardStyle} data-aos="fade-left" data-aos-duration="10" >
           <div
             className="card-bg"
             style={{ ...cardBgTransform, ...cardBgImage }}
           ></div>
-          <div className="card-info" dela>{this.props.children}</div>
+          <div className="card-info" delay>{this.props.children}</div>
         </div>
       </div>
     );
@@ -120,35 +122,39 @@ class Compi extends Component {
       //   aosDelay: "400",
       // },
       {
-        // dataImage: ,
-        title: "Competition-1",
-        description: "IIT Bombay SAC",
+        dataImage: i1,
+        title: "Sumo Bot Fight",
+        description: "Location : IIT Bombay",
         aosDelay: "500",
+        link: "https://unstop.com/p/sumo-bot-fight-tech-rnd-expo-iit-bombay-803095?lb=WePEzs0a",
       },
       {
-        // dataImage: ,
-        title: "Competition-2",
-        description: "IIT Bombay SAC",
+        dataImage: i2,
+        title: "ROBO SOCCER",
+        description: "Location : IIT Bombay",
         aosDelay: "600",
+        link: "https://unstop.com/p/robo-soccer-tech-rnd-expo-iit-bombay-803307?lb=WePEzs0a",
       },
       {
-        // dataImage: ,
+        dataImage: i3,
         title: "Competition-3",
-        description: "IIT Bombay SAC",
+        description:  "Location : IIT Bombay",
         aosDelay: "700",
+        link:"abc",
       },
       {
-        // dataImage: ,
+        dataImage: i4,
         title: "Competition-4",
-        description: "IIT Bombay SAC",
+        description:  "Location : IIT Bombay",
         aosDelay: "800",
+        link:"abc",
       },
     ];
 
     
     return (
       <div className="App_cards">
-            <h1 className="cards_title_list">Competitions</h1>
+            <h1 className="cards_title_list">COMPETITIONS</h1>
             <div id="app" className="cards_container">
                 {cardData.map((card, index) => (
                   <motion.div
@@ -158,10 +164,12 @@ class Compi extends Component {
                   exit={{ opacity: 0, y: 100 }}
                   transition={{ duration: 0.5, delay: index * 0.2 }}
                   >
-                    <Card dataImage={i1} aosDelay={card.aosDelay}>
+                    <Card dataImage={card.dataImage} aosDelay={card.aosDelay}>
                       <h1>{card.title} </h1>
                       <p>{card.description}</p>
+                      <a href={card.link}>
                       <button>Register</button>
+                      </a>
                     </Card>
                   </motion.div>
                 ))}

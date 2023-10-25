@@ -12,10 +12,14 @@ import itsp1 from './img/itsp1.jpeg'
 import itsp2 from './img/itsp2.jpeg'
 import itsp3 from './img/itsp3.jpeg'
 import itsp4 from './img/itsp4.jpeg'
-import i31 from "../../assets/stalls/techteam.jpeg"
-import i32 from "../../assets/stalls/techteam2.jpeg"
-import i33 from "../../assets/stalls/techteam3.jpeg"
-import i34 from "../../assets/stalls/techteam.jpeg"
+import i31 from "../../assets/stalls/tc1.webp"
+import i32 from "../../assets/stalls/tc2.webp"
+import i33 from "../../assets/stalls/tc3.webp"
+import i34 from "../../assets/stalls/tc4.webp"
+import i41 from "../../assets/stalls/techteam.jpeg"
+import i42 from "../../assets/stalls/techteam2.jpeg"
+import i43 from "../../assets/stalls/techteam3.jpeg"
+import i44 from "../../assets/stalls/techteam.jpeg"
 import i51 from "../../assets/stalls/techteam.jpeg"
 import i52 from "../../assets/stalls/techteam2.jpeg"
 import i53 from "../../assets/stalls/techteam3.jpeg"
@@ -46,7 +50,7 @@ function Stalls() {
   ]
   return (
       <div id='stalls'>
-        <h1 data-aos="fade-up" data-aos-duration="1000">STALLS</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1000">EXHIBITIONS</h1>
         <ul>
           {data.map((item, index) => (
             <li data-aos={(index%2==0) ? "fade-left" : "fade-right" } key={index}> 

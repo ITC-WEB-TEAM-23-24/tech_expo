@@ -77,7 +77,7 @@ const Footer = ({
                 <a href="https://www.instagram.com/tech.iitb" className="social-icon"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.facebook.com/tech.iitb/" className="social-icon"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://twitter.com/tech_iitb?lang=en" className="social-icon"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://in.linkedin.com/company/itc-iitb" className="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/company/institute-technical-council-iitb/" className="social-icon"><i class="fa-brands fa-linkedin"></i></a>
 
               </div>
             </div>
