@@ -1,5 +1,5 @@
 import React from "react";
-import logo from './purple_expo_logo_shadow.webp'
+import logo from './purple-color_website.webp'
 import "./about.css"
 
 export default function About() {

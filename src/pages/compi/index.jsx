@@ -137,14 +137,14 @@ class Compi extends Component {
       },
       {
         dataImage: i3,
-        title: "Competition-3",
+        title: "Crime Scene Investigation",
         description:  "Location : IIT Bombay",
         aosDelay: "700",
         link:"abc",
       },
       {
         dataImage: i4,
-        title: "Competition-4",
+        title: "Air Crash Investigation",
         description:  "Location : IIT Bombay",
         aosDelay: "800",
         link:"abc",
@@ -165,7 +165,7 @@ class Compi extends Component {
                   transition={{ duration: 0.5, delay: index * 0.2 }}
                   >
                     <Card dataImage={card.dataImage} aosDelay={card.aosDelay}>
-                      <h1>{card.title} </h1>
+                      <h1 style={{fontFamily: 'Montserrat', fontSize: '1.7rem'}}>{card.title} </h1>
                       <p>{card.description}</p>
                       <a href={card.link}>
                       <button>Register</button>
