@@ -24,12 +24,13 @@ const textContainerStyle = {
   fontSize: "2rem",
   fontFamily: "Verdana, sans-serif", // Change the font family
   fontWeight: "1000", // Change the font weight
-  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)", // Add a text shadow
+  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+  fontSize: "50px",
 };
 
 const Preloader = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const words = ["VoRteX", "to", "the", "FuTuRE"];
+  const words = ["VORTEX", "TO", "THE", "FUTURE"];
   const delayBetweenWords = 500;
 
   useEffect(() => {
@@ -46,11 +47,23 @@ const Preloader = () => {
     };
   }, [currentWordIndex]);
 
+  const updateFontSize = () => {
+    const isMobile = window.innerWidth < 680;
+    return isMobile ? "30px" : "50px";
+  };
+
+  const fontSize = updateFontSize();
+
   return (
     <div style={preloaderStyle}>
       <video src={preloaderGif} autoPlay loop muted style={videoStyle}>
       </video>
-      <div style={textContainerStyle}>
+      <div
+        style={{
+          ...textContainerStyle,
+          fontSize: fontSize,
+        }}
+      >
         {words.slice(0, currentWordIndex).map((word, index) => (
           <span key={index}>{word}&nbsp;</span>
         ))}
