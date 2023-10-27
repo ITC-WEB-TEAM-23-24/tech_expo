@@ -86,29 +86,29 @@ const Navbar = () => {
         
         <li>
           <a href="#home" title="Home" onClick={handleHomeClick}>
-            <img src={n1} alt="" />
+            <img src={n1} alt="home" />
           </a>
         </li>
         
         <li>
           <a href="#about" title="About Us" onClick={handleAboutUsClick}>
-            <img src={n2} alt="" />
+            <img src={n2} alt="about us" />
           </a>
         </li>
         <li>
           <a href="#stalls" title="Exhibitions" onClick={handleStallsClick}>
-            <img src={n5} alt="" />
+            <img src={n5} alt="stalls" />
           </a>
         </li>
 
         <li>
           <a href="#compi" title="Competitions" onClick={handleCompiClick}>
-            <img src={n4} alt="" />
+            <img src={n4} alt="competitions" />
           </a>
         </li>
         <li>
           <a href="#events" title="Events" onClick={handleEventsClick}>
-            <img src={n3} alt="" />
+            <img src={n3} alt="events" />
           </a>
         </li>
        

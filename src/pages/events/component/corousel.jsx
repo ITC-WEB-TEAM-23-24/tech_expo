@@ -107,19 +107,19 @@ const Carousel = ({ i1, i2, i3, i4, i5 }) => {
         <div id="events" className="main_carousel">
             <div className="slides" ref={slidesRef}>
                 <div className="slide prev2">
-                    <img src={img1}  className="Glimpse"/>
+                    <img src={img1} alt='carousel-image1'  className="Glimpse"/>
                 </div>
                 <div className="slide prev">
-                    <img src={img2} className="Glimpse"/>
+                    <img src={img2} alt='carousel-image2' className="Glimpse"/>
                 </div>
                  <div className="slide active">
-                    <img src={img3} className="Glimpse"/>
+                    <img src={img3} alt='carousel-image3' className="Glimpse"/>
                 </div>
                 <div className="slide next">
-                    <img src={img4} className="Glimpse"/>
+                    <img src={img4} alt='carousel-image4' className="Glimpse"/>
                 </div>
                 <div className="slide next2">
-                    <img src={img5} className="Glimpse"/>
+                    <img src={img5} alt='carousel-image5' className="Glimpse"/>
                 </div>
             </div>
             <div className="page-indicators">

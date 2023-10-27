@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import preloaderGif from "./preloader.webm";
+import preloaderGif from "./preloader.mp4";
 
 const preloaderStyle = {
   display: "flex",
