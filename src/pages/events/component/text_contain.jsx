@@ -8,7 +8,7 @@ function Text_contain() {
     const item1 = [
         "Gaming Zone",
         "VR Gaming",
-        "Lazer Tag",
+        "Laser Maze",
         "Everything"
     ];
 

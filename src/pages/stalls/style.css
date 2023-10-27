@@ -88,25 +88,28 @@
 #stalls ul .img1{
     left: 50%;
     top: 130%;
-    width: min(16rem, 50%);
+    width: min(14rem, 50%);
     z-index: 500;
 }
 #stalls ul .img2{
     right: 5%;
     top: 110%;
-    width: min(13rem, 50%);
+    /* width: min(13rem, 50%); */
+    width: min(14rem, 50%);
     z-index: 500;
 }
 #stalls ul .img3{
     right: 5%;
     top: -160%;
-    width: min(10rem, 50%);
+    /* width: min(10rem, 50%); */
+    width: min(14rem, 50%);
     z-index: 500;
 }
 #stalls ul .img4{
     left: 50%;
     top: -160%;
     z-index: 500;
+    /* width: min(14rem, 50%); */
     width: min(14rem, 50%);
 }
 
@@ -122,22 +125,22 @@
     #stalls ul .img1{
         left: 0%;
         top: 130%;
-        width: min(16rem, 50%);
+        /* width: min(16rem, 50%); */
     }
     #stalls ul .img2{
         right: 5%;
         top: 110%;
-        width: min(13rem, 50%);
+        /* width: min(13rem, 50%); */
     }
     #stalls ul .img3{
         right: 5%;
         top: -120%;
-        width: min(10rem, 50%);
+        /* width: min(10rem, 50%); */
     }
     #stalls ul .img4{
         left: 0%;
         top: -150%;
-        width: min(14rem, 50%);
+        /* width: min(14rem, 50%); */
     }
 }
 
