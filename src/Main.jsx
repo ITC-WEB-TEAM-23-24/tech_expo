@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import './style.css';
 import Stalls from './pages/stalls';
 import Navbar from './components/navbar';
 import Home from './pages/homepage';
@@ -13,11 +13,8 @@ import Eventss from './pages/events';
 import Workshops from './pages/workshops';
 import Sponsor from './pages/sponsors';
 import About from './pages/about';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Main from './Main';
-import Page from './pages/page';
 
-function App() {
+function Main() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -32,34 +29,22 @@ function App() {
   return (
     <div className="App">
       
-     {/* {isLoading ? (
-        <Preloader/>
-      ) : (  */}
+  
         <>
-          {/* <Navbar />
+          <Navbar />
           <Home />
-          <div className="background" /> */}
+          <div className="background" />
           {/* <Sponsor/> */}
-          {/* <About/>
+          <About/>
           <Stalls />
           <Compi/>
           <Workshops/>
           <Eventss/>
-          <Footer/> */}
+          <Footer/>
         </>
-        {/* )}   */}
-        {/* {isLoading ? (
-        <Preloader/>
-      ) : (  */}
-          <Router>
-            <Routes>
-              <Route path='/' element={<Main/>}/>
-              <Route path='/register/:name' element={<Page/>}/>
-            </Routes>
-          </Router>
-          {/* )}   */}
+        
     </div>
   );
 }
 
-export default App;
+export default Main;
