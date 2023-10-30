@@ -54,7 +54,8 @@ function App() {
           <Router>
             <Routes>
               <Route path='/' element={<Main/>}/>
-              <Route path='/register/:name' element={<Page/>}/>
+              <Route path='/workshops/:name' element={<Page/>}/>
+              <Route path='/competitions/:name' element={<Page/>}/>
             </Routes>
           </Router>
           {/* )}   */}

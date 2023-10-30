@@ -9,7 +9,7 @@
 
 .page-title{
     margin-top: 0;
-    font-size: 5rem;
+    font-size: 4rem;
     text-transform: uppercase; /* added property */
     font-family: Montserrat;
 }
@@ -48,7 +48,7 @@
 
 .main-img :hover{   
     display: hidden;
-    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     cursor: pointer;
 }
 

@@ -29,7 +29,9 @@ function Main() {
   return (
     <div className="App">
       
-  
+      {isLoading ? (
+        <Preloader/>
+      ) : ( 
         <>
           <Navbar />
           <Home />
@@ -42,7 +44,7 @@ function Main() {
           <Eventss/>
           <Footer/>
         </>
-        
+         )}  
     </div>
   );
 }

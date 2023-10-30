@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // import "./style.css"
 import AOS from "aos"
+import { Button } from "@mui/material";
 import "aos/dist/aos.css"
 import i1 from "../../assets/botsumo.webp"
 import i2 from "../../assets/robosoccer.webp"
 import i3 from "../../assets/tba.webp"
 import i4 from "../../assets/tba.webp"
+import {workshop_data} from "../page/data";
 
 
 
@@ -95,7 +97,7 @@ class Card extends Component {
 class Workshops extends Component {
 
   render() {
-    const cardData = [
+    const cardData = workshop_data
       // {
       //   // dataImage: ,
       //   title: "Hackathon-1",
@@ -121,35 +123,39 @@ class Workshops extends Component {
       //   description: "IIT Bombay SAC",
       //   aosDelay: "400",
       // },
-      {
-        dataImage: i1,
-        title: "Sumo Bot Fight",
-        description: "Location : IIT Bombay",
-        aosDelay: "500",
-        link: "https://unstop.com/p/sumo-bot-fight-tech-rnd-expo-iit-bombay-803095?lb=WePEzs0a",
-      },
-      {
-        dataImage: i2,
-        title: "ROBO SOCCER",
-        description: "Location : IIT Bombay",
-        aosDelay: "600",
-        link: "https://unstop.com/p/robo-soccer-tech-rnd-expo-iit-bombay-803307?lb=WePEzs0a",
-      },
-      {
-        dataImage: i3,
-        title: "Crime Scene Investigation",
-        description:  "Location : IIT Bombay",
-        aosDelay: "700",
-        link:"abc",
-      },
-      {
-        dataImage: i4,
-        title: "Air Crash Investigation",
-        description:  "Location : IIT Bombay",
-        aosDelay: "800",
-        link:"abc",
-      },
-    ];
+    //   {   id: 1,
+    //     dataImage: i1,
+    //     title: "Sumo Bot Fight",
+    //     description: "Location : IIT Bombay",
+    //     detail: 'The Sumo Bot Fight organized by Institute Technical Council, IIT Bombay is a sumo-style competition where teams bring fully assembled and programmed robots to engage in wrestling matches within a specially designed sumo ring. The primary goal is to outmaneuver and push the opponent out of the ring. This is not a "battle bots" event, so intentionally destructive robots are not allowed. The emphasis is on skill, strategy, and technical finesse, not causing harm or damage to the robots.',
+    //     aosDelay: "500",
+    //     link: "https://unstop.com/p/sumo-bot-fight-tech-rnd-expo-iit-bombay-803095?lb=WePEzs0a",
+    //   },
+    //   {
+    //     id: 2,
+    //     dataImage: i2,
+    //     title: "ROBO SOCCER",
+    //     description: "Location : IIT Bombay",
+    //     aosDelay: "600",
+    //     link: "https://unstop.com/p/robo-soccer-tech-rnd-expo-iit-bombay-803307?lb=WePEzs0a",
+    //   },
+    //   { 
+    //     id: 3,
+    //     dataImage: i3,
+    //     title: "Crime Scene Investigation",
+    //     description:  "Location : IIT Bombay",
+    //     aosDelay: "700",
+    //     link:"abc",
+    //   },
+    //   {
+    //     id: 4,
+    //     dataImage: i4,
+    //     title: "Air Crash Investigation",
+    //     description:  "Location : IIT Bombay",
+    //     aosDelay: "800",
+    //     link:"abc",
+    //   },
+    // ];
 
     
     return (
@@ -167,9 +173,7 @@ class Workshops extends Component {
                     <Card dataImage={card.dataImage} aosDelay={card.aosDelay}>
                       <h1 style={{fontFamily: 'Montserrat', fontSize: '1.7rem'}}>{card.title} </h1>
                       <p>{card.description}</p>
-                      <a href={card.link}>
-                      <button><a href={`/register/${index}`}>Register</a></button>
-                      </a>
+                      <Button href={`/workshops/${index}`} variant="contained" color="secondary">Know More</Button>
                     </Card>
                   </motion.div>
                 ))}
