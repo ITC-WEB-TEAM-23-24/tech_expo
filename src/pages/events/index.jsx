@@ -11,26 +11,26 @@ import TextAnimation from './component/text2'
 
 function Eventss() {
   const item1 = [
-    "Gaming Zone",
+    "Musical Stairs",
     "VR Gaming",
-    "Lazer Tag",
+    "Lazer Maze",
     "Everything"
   ];
   const item2 = [
-    "Sky Gazing",
+    "Telescope zone",
     "Drone Flying",
-    "Car Simulator",
+    "F1 Simulator",
     "Everything"
   ];
   const item3 = [
-    "Plane Simulator",
+    "Crime Scene Investigation",
     "HP Gaming",
-    "Photo Booth",
+    "Shadow light",
     "Everything"
   ];
   return (
     <div className='events'>
-        <h1 data-aos="fade-up" data-aos-duration="1000">EVENTS</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1000">INTERACTIVE ZONE & GAMES</h1>
         <div data-aos="fade-up" data-aos-duration="1000">
           <TextAnimation texts={item1}/>
           <TextAnimation texts={item2}/>

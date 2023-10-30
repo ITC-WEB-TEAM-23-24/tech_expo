@@ -27,6 +27,14 @@
     text-align: justify;
     font-size: 1.3rem;
 }
+.sponsors img{
+    width: 95%;
+    /* padding-right: 30px; */
+    /* padding-left: 30px; */
+    margin-inline: 2.5%;
+    margin-top: 10%;
+}
+
 @media(max-width: 1000px){
     .right{
         font-size: 1rem;
@@ -50,5 +58,11 @@
         width: 90%;
         padding: 0 5%;
     }
+    .sponsors img{
+       
+        margin-top: 20%;
+    }
 }
+
+
 

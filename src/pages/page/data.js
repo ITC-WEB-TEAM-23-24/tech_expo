@@ -25,22 +25,22 @@ const compi_data = [
         link: "https://unstop.com/p/robo-soccer-tech-rnd-expo-iit-bombay-803307?lb=WePEzs0a",
         iitbLink: "https://forms.gle/aQUKsrYFH98dX2SG7"
       },
-      { 
-        id: 3,
-        dataImage: i3,
-        title: "Crime Scene Investigation",
-        description:  "Location : IIT Bombay",
-        aosDelay: "700",
-        link:"abc",
-      },
-      {
-        id: 4,
-        dataImage: i4,
-        title: "Air Crash Investigation",
-        description:  "Location : IIT Bombay",
-        aosDelay: "800",
-        link:"abc",
-      },
+      // { 
+      //   id: 3,
+      //   dataImage: i3,
+      //   title: "Crime Scene Investigation",
+      //   description:  "Location : IIT Bombay",
+      //   aosDelay: "700",
+      //   link:"abc",
+      // },
+      // {
+      //   id: 4,
+      //   dataImage: i4,
+      //   title: "Air Crash Investigation",
+      //   description:  "Location : IIT Bombay",
+      //   aosDelay: "800",
+      //   link:"abc",
+      // },
 ]
 
 const workshop_data = [
@@ -64,6 +64,26 @@ const workshop_data = [
       iitbLink: 'https://docs.google.com/forms/d/e/1FAIpQLScc-DPOKK55mgweC6fOmBD14zVBuAzDL9nnPB92XjV-Keo4Sg/viewform',
       link: "https://unstop.com/o/cuhbkfS?lb=WePEzs0a",
     },
+    // { 
+    //     id: 3,
+    //     dataImage: i3,
+    //     title: "Robotics Workshop",
+    //     description:  "Location : IIT Bombay",
+    //     detail: "",
+    //     aosDelay: "800",
+    //     iitblink:"abc",
+    //     link:"",
+    //   },
+    // { 
+    //     id: 3,
+    //     dataImage: i3,
+    //     title: "UI/UX Workshop",
+    //     description:  "Location : IIT Bombay",
+    //     detail: "",
+    //     aosDelay: "800",
+    //     iitblink:"abc",
+    //     link:"",
+    //   },
 ]
 
 export {compi_data, workshop_data};
