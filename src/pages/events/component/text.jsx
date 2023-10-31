@@ -5,11 +5,11 @@
     const words = props.items;
     const loopDuration = 3000;
     const longestWordLength = Math.max(...words.map((word) => word.length));
-    console.log(longestWordLength);
+    //console.log(longestWordLength);
 
     const wordDelays = words.map((word) => {
-      console.log(word);
-      console.log(word.length);
+      //console.log(word);
+      //console.log(word.length);
       return (loopDuration / (word.length*word.length)) ;
     });
 

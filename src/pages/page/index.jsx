@@ -13,8 +13,8 @@ export default function Page() {
         const slicing = link_url.split("/"); // Retrieve the hostel value from navigation param
         const index = slicing[slicing.length - 1];
         const choice = slicing[slicing.length - 2];
-        console.log(index);
-        console.log(choice);
+        //console.log(index);
+        //console.log(choice);
         const data = choice === "workshops" ? workshop_data : compi_data;
         setPageData(data[index]);
         // console.log(compi_data)
@@ -53,7 +53,7 @@ export default function Page() {
               variant="contained"
               color="secondary"
               style={{ fontSize: '0.9rem', fontWeight: 'bold', width: '280px', marginTop: '10px'}}
-              href={page_data.iitbLink}
+              href={page_data.common_link}
             >
               Register
             </Button>}
