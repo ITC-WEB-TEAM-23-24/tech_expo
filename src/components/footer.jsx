@@ -60,7 +60,7 @@ const Footer = ({
               <b>IIT Bombay</b><br />
               Student Activity Center <br />
               IIT Bombay, Powai, Mumbai,<br />
-              Maharashtra, 40076
+              Maharashtra, 400076
             </p>
           </div>
           <div className="right-container">
@@ -74,10 +74,10 @@ const Footer = ({
               {/* <p>Developed by Web Team | <a href="https://itc.gymkhana.iitb.ac.in/" target="_blank" rel="noopener noreferrer">ITC</a> with ❤️ | All right reserved</p> */}
               {/* <FooterSocial></FooterSocial> */}
               <div>
-                <a href="https://www.instagram.com/tech.iitb" className="social-icon"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/tech.iitb/" className="social-icon"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com/tech_iitb?lang=en" className="social-icon"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/company/institute-technical-council-iitb/" className="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/tech.iitb" className="social-icon"><i className="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/tech.iitb/" className="social-icon"><i className="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/tech_iitb?lang=en" className="social-icon"><i className="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/institute-technical-council-iitb/" className="social-icon"><i className="fa-brands fa-linkedin"></i></a>
 
               </div>
             </div>

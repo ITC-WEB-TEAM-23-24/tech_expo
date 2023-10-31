@@ -1,0 +1,36 @@
+.register-container{
+    color: white;
+    margin-top: -2rem;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    padding: 0 12rem;
+    text-align: center;
+}
+
+.register-container h1{
+    margin-top: -12%;
+}
+
+@media screen and (max-width: 1000px){
+    .register-container{
+        padding: 0 5rem;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .register-container{
+        padding: 0 2rem;
+        height: 35%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .register-container{
+        padding: 0 2rem;
+        height: 50%;
+    }
+}

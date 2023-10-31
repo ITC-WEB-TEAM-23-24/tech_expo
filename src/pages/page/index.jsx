@@ -2,11 +2,18 @@ import React, { useEffect, useState } from "react";
 import { compi_data, workshop_data } from "./data.js";
 import "./style.css";
 import Button from '@mui/material/Button';
+import styled from "@emotion/styled";
 
 export default function Page() {
 
   const [page_data, setPageData] = useState({});
   // var compi_data = {};
+  // const bottomStyle = {
+  //   display: "flex",
+  //   flexDirection: "column-reverse",
+  //   justifyContent: "space-around",
+  //   alignItems: "center",
+  // }
 
   useEffect(() => {
     const link_url = window.location.href; // Get the current URL
@@ -23,17 +30,52 @@ export default function Page() {
   return (
     <div className="container">
 
-      <h1 className="page-title">{page_data.title}</h1>
+      <h1 className="page-title" style={page_data.companyLogo && { margin: '0' }}>{page_data.title}</h1>
       {page_data.companyLogo &&
-        <div className="company-logo" style={{textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <div className="company-logo" style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <h1>BY</h1>
-          <img src={page_data.companyLogo} alt="logo" style={{width: '300px'}}/>
+          <img src={page_data.companyLogo} alt="logo" style={{ width: '300px' }} />
         </div>
       }
 
       <div className="bottomContainer">
-        <div className="left">
+        <div className="left" >
           <p>{page_data.detail}</p>
+          {page_data.highlights &&
+            <div>
+              <h2>Highlights</h2>
+              {page_data.highlights.map((item, index) => {
+                return (
+                  <>
+                    <h3>{item.title}</h3>
+
+                    {item.content.map((item, index) => {
+                      return (
+                        <ul>
+                          <li><strong>{item.subtitle}:</strong> {item.subcontent}</li>
+                        </ul>
+                      )
+                    })}
+                  </>
+                )
+              })
+              }
+            </div>}
+          {page_data.learningOutcomes &&
+            <div>
+              <h2>Learning Outcomes</h2>
+              {page_data.learningOutcomes.map((item, index) => {
+                return (
+                  <>
+                    <ul>
+                      <li><strong>{item.subtitle}:</strong> {item.subcontent}</li>
+                    </ul>
+                  </>
+                )
+
+              })
+              }
+            </div>}
           {page_data.link &&
             <Button
               target="_blank"
@@ -65,8 +107,11 @@ export default function Page() {
               Register
             </Button>}
         </div>
-        <img className="main-img" src={page_data.dataImage} alt="compi" />
+        {/* <div className="bottom-bright"> */}
 
+          <img className="main-img" src={page_data.dataImage} style={page_data.highlights && {height: '100%'}} alt="compi" />
+          {/* <p style={{ color: 'white' }}>pokemon</p> */}
+        {/* </div> */}
       </div>
 
     </div>

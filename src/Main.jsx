@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
-import Stalls from './pages/stalls';
 import Navbar from './components/navbar';
 import Home from './pages/homepage';
+import Stalls from './pages/stalls';
 import Footer from './components/footer';
 import Compi from './pages/compi';
 import Preloader from './pages/preloader';
@@ -13,6 +13,7 @@ import Eventss from './pages/events';
 import Workshops from './pages/workshops';
 import Sponsor from './pages/sponsors';
 import About from './pages/about';
+import Register from './pages/register';
 
 function Main() {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,10 +29,10 @@ function Main() {
 
   return (
     <div className="App">
-      
+{/*       
       {isLoading ? (
         <Preloader/>
-      ) : ( 
+      ) : (  */}
         <>
           <Navbar />
           <Home />
@@ -42,9 +43,10 @@ function Main() {
           <Compi/>
           <Workshops/>
           <Eventss/>
+          <Register />
           <Footer/>
         </>
-         )}  
+         {/* )}   */}
     </div>
   );
 }
