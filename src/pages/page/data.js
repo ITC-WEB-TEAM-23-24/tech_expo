@@ -4,6 +4,9 @@ import i3 from "../../assets/tba.webp"
 import i4 from "../../assets/tba.webp"
 import w1 from "../../assets/ai.png"
 import w2 from "../../assets/web3.png"
+import w3 from "../../assets/robotics.png"
+import w4 from "../../assets/ui.png"
+
 
 const compi_data = [
     {   id: 1,
@@ -64,26 +67,27 @@ const workshop_data = [
       iitbLink: 'https://docs.google.com/forms/d/e/1FAIpQLScc-DPOKK55mgweC6fOmBD14zVBuAzDL9nnPB92XjV-Keo4Sg/viewform',
       link: "https://unstop.com/o/cuhbkfS?lb=WePEzs0a",
     },
-    // { 
-    //     id: 3,
-    //     dataImage: i3,
-    //     title: "Robotics Workshop",
-    //     description:  "Location : IIT Bombay",
-    //     detail: "",
-    //     aosDelay: "800",
-    //     iitblink:"abc",
-    //     link:"",
-    //   },
-    // { 
-    //     id: 3,
-    //     dataImage: i3,
-    //     title: "UI/UX Workshop",
-    //     description:  "Location : IIT Bombay",
-    //     detail: "",
-    //     aosDelay: "800",
-    //     iitblink:"abc",
-    //     link:"",
-    //   },
+    { 
+        id: 3,
+        dataImage: w3,
+        title: "Robotics Workshop",
+        description:  "Location : IIT Bombay",
+        detail: "Explore the cutting-edge world of robotics at our Bluetooth, Voice, and Gesture-controlled robot workshop. Learn to command robots with your voice and gestures, and delve into the future of human-robot interaction. Join us for an exciting hands-on experience that bridges technology and innovation.",
+        aosDelay: "800",
+        iitbLink:"https://docs.google.com/forms/d/e/1FAIpQLScxGhlepsEREwv0NI2IJKD8hOTE3IHLT5nj5k6R7MSJO1kgSQ/viewform",
+        link:"https://unstop.com/o/eEpTof4?lb=WePEzs0a",
+      },
+    { 
+        id: 4,
+        dataImage: w4,
+        title: "UI/UX Workshop",
+        description:  "Location : IIT Bombay",
+        detail: "Elevate your design skills and create user-centric digital experiences at our UI/UX workshop. Dive into the art of crafting intuitive interfaces, understanding user behavior, and optimizing user journeys. Join us for a transformative learning experience in the world of user experience design.",
+        aosDelay: "800",
+        iitblink:"",
+        link:"",
+        common_link: "https://docs.google.com/forms/d/e/1FAIpQLSfV5OXcEvCzGv0IoWw8QeuuUn5fVA7Z5oRLyOIa6V-AZtunKg/viewform"
+      },
 ]
 
 export {compi_data, workshop_data};

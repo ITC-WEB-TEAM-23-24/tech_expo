@@ -27,6 +27,7 @@ export default function Page() {
         <div className="bottomContainer">
           <div className="left">
             <p>{page_data.detail}</p>
+            {page_data.link && 
             <Button
               target="_blank"
               variant="contained"
@@ -35,7 +36,8 @@ export default function Page() {
               href={page_data.link}
             >
               Registration for Outsiders 
-            </Button>
+            </Button>}
+            {page_data.iitbLink &&
             <Button
               target="_blank"
               variant="contained"
@@ -44,7 +46,17 @@ export default function Page() {
               href={page_data.iitbLink}
             >
               Registration for IITB Students
-            </Button>
+            </Button>}
+            {page_data.common_link &&
+            <Button
+              target="_blank"
+              variant="contained"
+              color="secondary"
+              style={{ fontSize: '0.9rem', fontWeight: 'bold', width: '280px', marginTop: '10px'}}
+              href={page_data.iitbLink}
+            >
+              Register
+            </Button>}
           </div>
           <img className="main-img" src={page_data.dataImage} alt="compi" />
         </div>
