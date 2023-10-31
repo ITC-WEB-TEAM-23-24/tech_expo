@@ -5,29 +5,36 @@ import Button from '@mui/material/Button';
 
 export default function Page() {
 
-    const [page_data, setPageData] = useState({});
-    // var compi_data = {};
+  const [page_data, setPageData] = useState({});
+  // var compi_data = {};
 
-    useEffect(() => {
-        const link_url = window.location.href; // Get the current URL
-        const slicing = link_url.split("/"); // Retrieve the hostel value from navigation param
-        const index = slicing[slicing.length - 1];
-        const choice = slicing[slicing.length - 2];
-        //console.log(index);
-        //console.log(choice);
-        const data = choice === "workshops" ? workshop_data : compi_data;
-        setPageData(data[index]);
-        // console.log(compi_data)
-    }, [compi_data]);
+  useEffect(() => {
+    const link_url = window.location.href; // Get the current URL
+    const slicing = link_url.split("/"); // Retrieve the hostel value from navigation param
+    const index = slicing[slicing.length - 1];
+    const choice = slicing[slicing.length - 2];
+    //console.log(index);
+    //console.log(choice);
+    const data = choice === "workshops" ? workshop_data : compi_data;
+    setPageData(data[index]);
+    // console.log(compi_data)
+  }, [compi_data]);
 
-    return(
-        <div className="container">
+  return (
+    <div className="container">
 
-        <h1 className="page-title">{page_data.title}</h1>
-        <div className="bottomContainer">
-          <div className="left">
-            <p>{page_data.detail}</p>
-            {page_data.link && 
+      <h1 className="page-title">{page_data.title}</h1>
+      {page_data.companyLogo &&
+        <div className="company-logo" style={{textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+          <h1>BY</h1>
+          <img src={page_data.companyLogo} alt="logo" style={{width: '300px'}}/>
+        </div>
+      }
+
+      <div className="bottomContainer">
+        <div className="left">
+          <p>{page_data.detail}</p>
+          {page_data.link &&
             <Button
               target="_blank"
               variant="contained"
@@ -35,33 +42,34 @@ export default function Page() {
               style={{ fontSize: '0.9rem', fontWeight: 'bold', width: '290px' }}
               href={page_data.link}
             >
-              Registration for Outsiders 
+              Registration for Outsiders
             </Button>}
-            {page_data.iitbLink &&
+          {page_data.iitbLink &&
             <Button
               target="_blank"
               variant="contained"
               color="secondary"
-              style={{ fontSize: '0.9rem', fontWeight: 'bold', width: '280px', marginTop: '10px'}}
+              style={{ fontSize: '0.9rem', fontWeight: 'bold', width: '280px', marginTop: '10px' }}
               href={page_data.iitbLink}
             >
               Registration for IITB Students
             </Button>}
-            {page_data.common_link &&
+          {page_data.common_link &&
             <Button
               target="_blank"
               variant="contained"
               color="secondary"
-              style={{ fontSize: '0.9rem', fontWeight: 'bold', width: '280px', marginTop: '10px'}}
+              style={{ fontSize: '0.9rem', fontWeight: 'bold', width: '280px', marginTop: '10px' }}
               href={page_data.common_link}
             >
               Register
             </Button>}
-          </div>
-          <img className="main-img" src={page_data.dataImage} alt="compi" />
         </div>
+        <img className="main-img" src={page_data.dataImage} alt="compi" />
 
-  </div>
+      </div>
 
-    )
+    </div>
+
+  )
 }

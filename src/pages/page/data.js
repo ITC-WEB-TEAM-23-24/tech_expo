@@ -6,6 +6,7 @@ import w1 from "../../assets/ai.png"
 import w2 from "../../assets/web3.png"
 import w3 from "../../assets/robotics.png"
 import w4 from "../../assets/ui.png"
+import logo from "../../assets/robobox.png"
 
 
 const compi_data = [
@@ -54,7 +55,7 @@ const workshop_data = [
       detail: 'This workshop is designed to provide a holistic learning experience for students, enthusiasts, and aspiring technologists, encompassing both the foundational principles of Artificial Intelligence and the specialized world of Natural Language Processing (NLP).  Firsly we shall understand fundamentals in AI. And then we learn NLP techniques and hands on development.',
       aosDelay: "500",
       iitbLink: 'https://docs.google.com/forms/d/e/1FAIpQLScc-DPOKK55mgweC6fOmBD14zVBuAzDL9nnPB92XjV-Keo4Sg/viewform',
-      link: "https://unstop.com/o/Ti73fjw?lb=WePEzs0a",
+      link: "https://unstop.com/o/1zFrDj5?lb=WePEzs0a",
 
     },
     {
@@ -65,11 +66,12 @@ const workshop_data = [
       detail: "This workshop is a comprehensive exploration of Web 3.0, offering a two-part journey that begins with the fundamentals of decentralized applications (dApps) and culminates with the captivating world of Non-Fungible Tokens (NFTs) and digital collectibles. This workshop will also involve Hands-on NFT creation.",
       aosDelay: "600",
       iitbLink: 'https://docs.google.com/forms/d/e/1FAIpQLScc-DPOKK55mgweC6fOmBD14zVBuAzDL9nnPB92XjV-Keo4Sg/viewform',
-      link: "https://unstop.com/o/cuhbkfS?lb=WePEzs0a",
+      link: "https://unstop.com/o/sOxUSLy?lb=WePEzs0a",
     },
     { 
         id: 3,
         dataImage: w3,
+        companyLogo: logo,
         title: "Robotics Workshop",
         description:  "Location : IIT Bombay",
         detail: "Explore the cutting-edge world of robotics at our Bluetooth, Voice, and Gesture-controlled robot workshop. Learn to command robots with your voice and gestures, and delve into the future of human-robot interaction. Join us for an exciting hands-on experience that bridges technology and innovation.",
@@ -80,6 +82,7 @@ const workshop_data = [
     { 
         id: 4,
         dataImage: w4,
+        companyLogo: logo,
         title: "UI/UX Workshop",
         description:  "Location : IIT Bombay",
         detail: "Elevate your design skills and create user-centric digital experiences at our UI/UX workshop. Dive into the art of crafting intuitive interfaces, understanding user behavior, and optimizing user journeys. Join us for a transformative learning experience in the world of user experience design.",
