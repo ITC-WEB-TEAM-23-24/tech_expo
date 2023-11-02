@@ -6,7 +6,7 @@ export default function Register() {
     return(
         <div className="register-container">
             <h1>REGISTER NOW</h1>
-            <h3>Tech Expo 2023 – Where innovation meets inspiration. Register to access insightful workshops, connect with tech pioneers, explore groundbreaking exhibits, and take your tech journey to the next level. Don't miss this opportunity; secure your spot now!</h3>
+            <h3>Tech Expo 2023 – Where innovation meets inspiration. Register to access insightful panel discussions, connect with tech pioneers, explore groundbreaking exhibits, and take your tech journey to the next level. Don't miss this opportunity; secure your spot now!</h3>
             <Button
               target="_blank"
               variant="contained"

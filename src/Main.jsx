@@ -14,6 +14,7 @@ import Workshops from './pages/workshops';
 import Sponsor from './pages/sponsors';
 import About from './pages/about';
 import Register from './pages/register';
+import Helmet from 'react-helmet';
 
 function Main() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,10 +30,15 @@ function Main() {
 
   return (
     <div className="App">
-{/*       
+      
+      <Helmet>
+        <title>TechRndExpo 2023</title>  
+        <meta name="description" content="Tech RnD Expo 2023, IIT Bombay website" />
+      </Helmet>
+
       {isLoading ? (
         <Preloader/>
-      ) : (  */}
+      ) : ( 
         <>
           <Navbar />
           <Home />
@@ -46,7 +52,7 @@ function Main() {
           <Register />
           <Footer/>
         </>
-         {/* )}   */}
+         )}  
     </div>
   );
 }

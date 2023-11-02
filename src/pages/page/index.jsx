@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { compi_data, workshop_data } from "./data.js";
 import "./style.css";
 import Button from '@mui/material/Button';
+import { Helmet } from 'react-helmet';
 import styled from "@emotion/styled";
 
 export default function Page() {
@@ -14,21 +15,29 @@ export default function Page() {
   //   justifyContent: "space-around",
   //   alignItems: "center",
   // }
+  var choice;
 
   useEffect(() => {
     const link_url = window.location.href; // Get the current URL
     const slicing = link_url.split("/"); // Retrieve the hostel value from navigation param
     const index = slicing[slicing.length - 1];
-    const choice = slicing[slicing.length - 2];
+    choice = slicing[slicing.length - 2];
+    
     //console.log(index);
     //console.log(choice);
     const data = choice === "workshops" ? workshop_data : compi_data;
+
     setPageData(data[index]);
     // console.log(compi_data)
   }, [compi_data]);
+    const title = choice === "workshops" ? `${page_data.title} | Workshops` : `${page_data.title} | Competitions`;
 
   return (
     <div className="container">
+       <Helmet>
+        <title>{title}</title>  
+        <meta name="description" content="Competitions/Workshops" />
+      </Helmet>
 
       <h1 className="page-title" style={page_data.companyLogo && { margin: '0' }}>{page_data.title}</h1>
       {page_data.companyLogo &&
