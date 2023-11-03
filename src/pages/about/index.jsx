@@ -1,7 +1,7 @@
 import React from "react";
 import logo from './purple-color_website.webp'
 import "./about.css"
-import sponsors from "./sponsors.jpg"
+import sponsors from "./sponsors.png"
 
 export default function About() {
     return (

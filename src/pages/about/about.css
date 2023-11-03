@@ -27,8 +27,14 @@
     text-align: justify;
     font-size: 1.3rem;
 }
+
+.sponsors{
+    display: flex;
+    justify-content: center;
+}
+
 .sponsors img{
-    width: 95%;
+    width: 75%;
     /* padding-right: 30px; */
     /* padding-left: 30px; */
     margin-inline: 2.5%;

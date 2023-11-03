@@ -23,36 +23,45 @@ function Main() {
     AOS.init();
     const timer = setTimeout(() => {
       setIsLoading(false);
+      // Save the loading state in local storage
+      localStorage.setItem('isLoading', 'false');
     }, 3700);
 
     return () => clearTimeout(timer);
   }, []);
 
+  // Check if the loading state is stored in local storage
+  useEffect(() => {
+    const storedLoadingState = localStorage.getItem('isLoading');
+    if (storedLoadingState === 'false') {
+      setIsLoading(false);
+    }
+  }, []);
+
   return (
     <div className="App">
-      
       <Helmet>
-        <title>TechRndExpo 2023</title>  
+        <title>TechRndExpo 2023</title>
         <meta name="description" content="Tech RnD Expo 2023, IIT Bombay website" />
       </Helmet>
 
       {isLoading ? (
-        <Preloader/>
-      ) : ( 
+        <Preloader />
+      ) : (
         <>
           <Navbar />
           <Home />
           <div className="background" />
           {/* <Sponsor/> */}
-          <About/>
+          <About />
           <Stalls />
-          <Compi/>
-          <Workshops/>
-          <Eventss/>
+          <Compi />
+          <Workshops />
+          <Eventss />
           <Register />
-          <Footer/>
+          <Footer />
         </>
-         )}  
+      )}
     </div>
   );
 }
